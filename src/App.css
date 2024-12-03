@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f98fee, #46fbe4, #cbf86c, #ba8fd5, #d769a3, #f47270);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #333;
+  overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.search-section {
+  margin: 20px 0;
+}
+
+#wordInput {
+  width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#searchBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #46fbe4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#searchBtn:hover {
+  transform: scale(1.1);
+}
+
+.results-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.results-section h2 {
+  color: #f47270;
+  text-decoration: underline;
+}
+
+.results-section p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.scroll-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-buttons button {
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 10px;
+  background-color: #ba8fd5;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.scroll-buttons button:hover {
+  transform: scale(1.2);
+}
